@@ -39,7 +39,7 @@ export const Checkout = (props) => {
               <form>
                 <MDBRow className="mb-4">
                   <MDBCol>
-                    <MDBInput label="First name" type="text" />
+                    <MDBInput label="First name" type="text" required/>
                   </MDBCol>
                   <MDBCol>
                     <MDBInput label="Last name" type="text" />
@@ -47,7 +47,7 @@ export const Checkout = (props) => {
                 </MDBRow>
 
                 <MDBInput label="Company name" type="text" className="mb-4" />
-                <MDBInput label="Address" type="text" className="mb-4" />
+                <MDBInput label="Address" type="text" className="mb-4" required/>
                 {emailValue ? (
                   <MDBInput
                     label="Email"
@@ -56,7 +56,7 @@ export const Checkout = (props) => {
                     value={emailValue}
                   />
                 ) : (
-                  <MDBInput label="Email" type="text" className="mb-4" />
+                  <MDBInput label="Email" type="text" className="mb-4" required/>
                 )}
 
                 <MDBInput label="Phone" type="text" className="mb-4" />

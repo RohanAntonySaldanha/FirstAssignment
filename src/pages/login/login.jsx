@@ -29,7 +29,7 @@ export const Login = () => {
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName">Enter Your UserName : </label>
-                <input type="text" ref={email} />
+                <input type="text" ref={email} required/>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ export const Login = () => {
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName">Enter Your Password : </label>
-                <input type="password" ref={password} />
+                <input type="password" ref={password} required/>
               </div>
             </div>
           </div>
